@@ -1,0 +1,86 @@
+// section 2 about Saphir
+.saphir1{
+  // .saphir__body
+  &__body {
+    padding: 6% 25%;
+    background: url('/dist/img/saphir_bg1.svg') no-repeat;
+  }
+  @media screen and (max-width: 1080px){
+    &__body {
+      padding: 10% 15%;
+    }
+  }
+  @media screen and (max-width: $md2 + px){
+    &__body {
+      padding: 7% 10%;
+    }
+  }
+}
+.saphir {
+  padding-bottom: 30px;
+  
+  
+  // .saphir__title
+  &__title {
+    padding-top: 90px;
+    position: relative;
+    &::before{
+      content: url('/dist/img/icons/W.svg');
+      width: 84px;
+      height: 84px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 42px);
+    }
+  }
+  // .saphir__description
+  &__description {
+    font-family: $fontFamilyAdd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0 0 30px;
+    span{
+      font-family: $fontFamilyAdd;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__text-link {
+    display: none;
+    color: $gold;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    background: transparent;
+    margin: 0 auto 20px;
+  }
+  
+  @media screen and (max-width: $md4 + px){
+    &__title {
+      padding-top: 70px;
+      &::before{
+        width: 64px;
+        height: 64px;      
+        left: calc(50% - 32px);
+      }
+    }
+    &__description{
+      margin: 0 0 20px;
+      span{
+        display: none;
+        .open{
+          display: block;
+        }
+      }
+    }
+    &__text-link {
+      display: block;
+    }
+  }
+  
+}

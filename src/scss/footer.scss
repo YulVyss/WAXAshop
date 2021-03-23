@@ -1,0 +1,114 @@
+//footer
+.footer.container{
+  background-color: transparent;
+  padding: 0;
+}
+.footer {
+  // .footer__body
+  &__body {
+  }
+  // .footer__top
+  &__top {
+    padding: 35px 0 27px;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  // .footer__social
+  &__social {
+    display: flex;
+    justify-content: center;
+    li{
+      margin-right: 10px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+    li a {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+    }
+  }
+  // .footer__middle
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+  }
+  // .footer__menu
+  &__menu {
+  }
+  // .footer__title
+  &__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+  // .footer__list
+  &__list {
+    li{
+      margin-bottom: 25px;
+    }
+    p, address{
+      font-size: 13px;
+      line-height: 16px;
+      font-family: $fontFamilyAdd;
+      font-style: normal;
+      color: #7A7A7A;
+    }
+    .nav__item{
+      font-family: $fontFamilyAdd;
+      font-size: 13px;
+      line-height: 26px;
+    }
+  }
+  // .footer__bottom
+  &__bottom {
+    border-top: 1px solid #E9E9E9;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #7A7A7A;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  &__site{
+    display: flex;
+    flex-wrap: wrap;
+    p{
+      font-size: 13px;
+      line-height: 16px;
+      font-family: $fontFamilyAdd;
+      color: #7A7A7A;
+      margin-right: 20px;
+    }
+  }
+  // .footer__logo
+  &__logo {
+  }
+  // .footer__about
+  &__about {
+    max-width: 50%;
+  }
+  // .footer__developer
+  &__developer {
+    opacity: 50%;
+  }
+}
+.container {
+}
+.inst {
+  background: url('../img/icons/instagram.svg') center no-repeat;
+}
+.vk {
+  background: url('../img/icons/vk.svg') center no-repeat;
+}
+.f {
+  background: url('../img/icons/f.svg') center no-repeat;
+}
+.nav {
+  // .nav__item
+  &__item {
+  }
+}
