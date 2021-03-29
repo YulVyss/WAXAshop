@@ -1,9 +1,9 @@
 // section 2 about Saphir
-.saphir1{
+.saphir1{  
   // .saphir__body
   &__body {
     padding: 6% 25%;
-    background: url('/dist/img/saphir_bg1.svg') no-repeat;
+    background: url('../img/saphir_bg1.svg') no-repeat;
   }
   @media screen and (max-width: 1080px){
     &__body {
@@ -25,7 +25,7 @@
     padding-top: 90px;
     position: relative;
     &::before{
-      content: url('/dist/img/icons/W.svg');
+      content: url('../img/icons/W.svg');
       width: 84px;
       height: 84px;
       position: absolute;

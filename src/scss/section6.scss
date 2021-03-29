@@ -11,7 +11,7 @@
   &__title {
     position: relative;
     &::before{
-			content: url('/dist/img/icons/Ж.svg');
+			content: url('../img/icons/Ж.svg');
       position: absolute;
       top: 0;
       left: calc(50% - 10px);

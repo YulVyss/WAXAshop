@@ -2,14 +2,16 @@ import './menu.js';
 import './sliders';
 import '../scss/style.scss';
 
-console.log("It's OK!")
-let readMore = document.querySelector('.saphir__text-link');
-let textToShow = document.querySelector('.saphir__description span');
+let readMore = document.querySelectorAll('.saphir__text-link');
+let textToShow = document.querySelectorAll('.saphir__description span');
 
-readMore.addEventListener("click", function (e) {
-  if(textToShow.style.display = 'none'){
-    textToShow.style.display = 'block';
-  } else {
-    textToShow.style.display = 'none';
-  }; 
-})
+for (let i = 0; i < readMore.length; i++) {
+
+  let link = readMore[i];
+  let text = textToShow[i];
+
+  link.addEventListener("click", function (e) {
+    text.style.display = 'block';
+    link.style.display = "none";
+  });
+}

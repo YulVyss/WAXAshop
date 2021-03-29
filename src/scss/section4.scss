@@ -4,7 +4,7 @@
   padding-bottom: 25px;
   // .email__body
   &__body {
-    background: url('/dist/img/subscribe.png') 10% 0 / contain no-repeat, #F2EADB;
+    background: url('../img/subscribe.png') 10% 0 / contain no-repeat, #F2EADB;
   }
   
   // .email__from
@@ -60,11 +60,11 @@
     text-align: right;
     line-height: 28px;
     font-weight: bold;
-    background: url('/dist/img/icons/arrow-light.svg') 15% 50% no-repeat, transparent;
+    background: url('../img/icons/arrow-light.svg') 15% 50% no-repeat, transparent;
   }
   @media (max-width: $md2+px){    
     &__body {
-      background: url('/dist/img/subscribe.png') -30px 0 / contain no-repeat, #F2EADB;
+      background: url('../img/subscribe.png') -30px 0 / contain no-repeat, #F2EADB;
     }
     &__text {      
       padding: 6% 6% 6% 44%;
@@ -72,7 +72,7 @@
   }
   @media (max-width: $md3+px){    
     &__body {
-      background: url('/dist/img/subscribe.png') top / 48% no-repeat, #F2EADB;
+      background: url('../img/subscribe.png') top / 48% no-repeat, #F2EADB;
     }
     &__text {      
       padding: 57% 5% 5% 5%;
@@ -103,6 +103,7 @@
     }
     input[type='submit']{
       margin: 0 auto;
+      cursor: pointer;
     }
   }
 }

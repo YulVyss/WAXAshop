@@ -2,13 +2,13 @@
 .saphir2{
   &__body {
     padding: 7% 27%;
-    background: url('/dist/img/saphir_bg.svg') no-repeat;
+    background: url('../img/saphir_bg.svg') no-repeat;
   }
 
   &__title {   
     padding-top: 110px; 
     &::before{
-      content: url('/dist/img/icons/saphir.svg');
+      content: url('../img/icons/saphir.svg');
       width: 135px;
       height: 99px;
       position: absolute;

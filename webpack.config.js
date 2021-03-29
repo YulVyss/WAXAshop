@@ -5,37 +5,40 @@ const webpack = require('webpack');
 //plugins
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { env } = require('process');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, "src"),
   entry: {
     app: [
-      './js/index.js',
+      "./js/index.js",
     ],
   },
   output: {
-    filename: 'js/[name].js', 
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '../'
+    // publicPath: '../'
   },
-  mode: "development",
-   //devserver config
-   devServer: {
-    contentBase: './app',
+  // watch: true,
+  devtool: "source-map",
+  mode: env.production ? 'production' : 'development',
+  //devserver config
+  devServer: {
+    contentBase: './dist',
     port: 3000,
   },
   plugins: [
     // Styles
-    new MiniCssExtractPlugin({filename: '../dist/css/style.css'}),
+    new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     // Generating HTML
-    new HtmlWebpackPlugin({ template: 'pug/index.pug', filename: '../app/index.html' }),
-    new HtmlWebpackPugPlugin(),
-    // new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({ template: 'pug/index.pug', filename: '../dist/index.html' }),
+    new HtmlWebpackPugPlugin({
+      adjustIndent: true
+    }),
+    new CleanWebpackPlugin(),
     // other files
     new CopyWebpackPlugin({
       patterns: [
@@ -48,7 +51,7 @@ module.exports = {
     rules: [
       // HTML
       {
-        test: /\.pug$/,
+        test: /\.(pug|jade)$/,
         loader: 'pug-loader'
       },
       //scss
@@ -66,6 +69,7 @@ module.exports = {
               url: false
             }
           },
+          // 
           // {
           //   loader: 'postcss-loader',
           //   options: {

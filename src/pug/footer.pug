@@ -9,9 +9,10 @@ footer.footer.container
         li 
           a(href='#').f
     .footer__middle 
-      nav.footer__menu 
-        h2.footer__title Компания
-        ul.footer__list
+      .footer__wrapper
+        nav.footer__menu 
+          h2.footer__title Компания
+          ul.footer__list
             li
               a(href="/").nav__item О нас
             li
@@ -24,6 +25,9 @@ footer.footer.container
               a(href="/").nav__item Вакансии
             li
               a(href="/").nav__item Контакты
+        nav.footer__menu 
+          h2.footer__title <br/>
+          ul.footer__list
             li
               a(href="/").nav__item Отзывы
             li
@@ -32,9 +36,10 @@ footer.footer.container
               a(href="/").nav__item Оплата и доставка
             li
               a(href="/").nav__item Возврат товара
-      .footer__menu 
-        h2.footer__title Уход за обувью
-        ul.footer__list
+      .footer__wrapper
+        .footer__menu 
+          h2.footer__title Уход за обувью
+          ul.footer__list
             li
               a(href="/").nav__item Гладкая кожа
             li
@@ -47,26 +52,28 @@ footer.footer.container
               a(href="/").nav__item Кордован
             li
               a(href="/").nav__item Уход за кроссовками
-      .footer__menu 
-        h2.footer__title Контакты
-        ul.footer__list
-          li 
-            a(href='tel:88043339965').nav__item 8 804 333 99 65
-            p Бесплатный звонок по всей России
-          li 
-            a(href='tel:88125774218').nav__item 8 (812) 577 42 18
-            address Магазин: Санкт-Петербург, ул. 4-я Советская, 45
-          li
-              a(href="/").nav__item Наши офисы
-          li
-              a(href="/").nav__item Напишите нам   
-    .footer__middle 
+        .footer__menu 
+          h2.footer__title Контакты
+          ul.footer__list
+            li 
+              a(href='tel:88043339965').nav__item 8 804 333 99 65
+              p Бесплатный звонок по всей России
+            li 
+              a(href='tel:88125774218').nav__item 8 (812) 577 42 18
+              address Магазин: Санкт-Петербург, <br/>ул. 4-я Советская, 45
+            li
+                a(href="/").nav__item Наши офисы
+            li
+                a(href="/").nav__item Напишите нам   
+    .footer__additional 
       .footer__site 
-        p Политика конфиденциальности
-        p Сообщить об ошибке
-        p Карта сайта
-      .footer_payment <img src="/dist/img/icons/paymethod.png">
+        a(href="/") Политика конфиденциальности
+        a(href="/") Сообщить об ошибке
+        a(href="/") Карта сайта
+      .footer__payment 
+        img(src="./img/icons/paymethod.png")
     .footer__bottom 
-      .footer__logo <img src='/dist/img/LOGO-footer.svg'>
+      .footer__logo 
+        img(src='./img/LOGO-footer.svg')
       .footer__about 2015-2019 © Waxa Shop – интернет-магазин обувной косметики и аксессуаров для джентльменов. Все о правильном уходе за обувью. Копируя материалы, пожалуйста, ставьте активную ссылку на источник.
       a(href="/").footer__developer Сделано в Fenneco

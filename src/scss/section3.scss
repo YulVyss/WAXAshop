@@ -5,7 +5,7 @@
   &__title {
     position: relative;
     &::before{
-			content: url('/dist/img/icons/К.svg');
+			content: url('../img/icons/К.svg');
       position: absolute;
       top: 0;
       left: calc(50% - 10px);
@@ -68,7 +68,7 @@
     right: 40px;
     border: 1px solid rgba($color: #fff, $alpha: 0.3);
     border-radius: 50%;
-    background: url('/dist/img/icons/arrow-collection.svg') center no-repeat;
+    background: url('../img/icons/arrow-collection.svg') center no-repeat;
   }
   // .collection__description
   &__description {
@@ -106,28 +106,28 @@
       top: 24px;
       right: 24px;
       border: 1px solid rgba($color: #fff, $alpha: 1);
-      background: url('/dist/img/icons/arrow-collection-black.svg') center no-repeat, #fff;
+      background: url('../img/icons/arrow-collection-black.svg') center no-repeat, #fff;
     }
   }
     
   
 }
 .collection__item_1{
-  background: url('/dist/img/collection1.jpg') top / cover no-repeat;
+  background: url('../img/collection1.jpg') top / cover no-repeat;
 }
 .collection__item_2{
-  background: url('/dist/img/collection2.jpg') top / cover no-repeat;
+  background: url('../img/collection2.jpg') top / cover no-repeat;
 }
 .collection__item_3{
-  background: url('/dist/img/collection3.jpg') top / cover no-repeat;
+  background: url('../img/collection3.jpg') top / cover no-repeat;
 }
 .collection__item_4{
-  background: url('/dist/img/collection4.jpg') top / cover no-repeat;
+  background: url('../img/collection4.jpg') top / cover no-repeat;
 }
 .collection__item_5{
-  background: url('/dist/img/collection5.jpg') top / cover no-repeat;
+  background: url('../img/collection5.jpg') top / cover no-repeat;
 }
 .collection__item_6{
-  background: url('/dist/img/collection6.jpg') top / cover no-repeat;
+  background: url('../img/collection6.jpg') top / cover no-repeat;
 }
 

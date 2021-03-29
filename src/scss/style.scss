@@ -13,7 +13,7 @@ $fontFamily: "Gotham Pro";
 $fontFamilyAdd: 'PT Sans', sans-serif;
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
-$minWidth: 320px;
+$minWidth: 300px;
 $maxWidth: 1920;
 $maxWidthContainer: 1500;
 $md1: $maxWidthContainer + 20;
@@ -33,6 +33,7 @@ body {
 	&._lock {
 		overflow: hidden;
 	}
+	
 }
 
 //<ОБОЛОЧКА>===========================================================================================================
@@ -46,11 +47,15 @@ body {
 	color: $dark-gray;
 	// &._loaded {
 	// }
+	@media (max-width: $md4 + px){
+		background-color: #fff;
+	}
 }
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
 	max-width: $maxWidthContainer + px;
+	min-width: $minWidth;
 	margin: 0 auto;
 	background: #ffffff;
 	padding: 0 26px;
