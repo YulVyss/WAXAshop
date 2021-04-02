@@ -1,3 +1,8 @@
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// configure Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
+
 import Swiper from 'swiper';
   // import Swiper styles
   // import 'swiper/swiper-bundle.css';
@@ -13,9 +18,6 @@ import Swiper from 'swiper';
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (index + 1) + '</span>';
-			},
 		},	
 		// Navigation arrows
 		navigation: {

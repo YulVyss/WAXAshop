@@ -1,6 +1,7 @@
 import './menu.js';
 import './sliders';
 import '../scss/style.scss';
+import Swiper from 'swiper';
 
 let readMore = document.querySelectorAll('.saphir__text-link');
 let textToShow = document.querySelectorAll('.saphir__description span');
