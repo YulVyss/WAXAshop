@@ -48,6 +48,9 @@
 		border-radius: 50%;
 		background: url('../img/icons/arrow.svg') center no-repeat, #EFEFEF;
 		cursor: pointer;
+		@media (max-width: $md3+px){
+			display: none;
+		}
 	}
 	.swiper-button-prev {
 		left: 24px;
@@ -71,6 +74,9 @@
 	bottom: 10px;
 	display: flex;
 	justify-content: center;
+	@media (max-width: $md3+px){
+		display: none;
+	}
 }
 .swiper-pagination-bullet {
 	width: 38px;

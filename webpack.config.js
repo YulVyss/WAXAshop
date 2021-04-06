@@ -9,6 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
@@ -68,17 +69,10 @@ module.exports = {
               sourceMap: true,
               url: false
             }
+          },          
+          {
+            loader: 'postcss-loader',
           },
-          // 
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     plugins: [
-          //       autoprefixer(),
-          //       // cssnano(),
-          //     ],
-          //   },
-          // },
           {
             loader: 'sass-loader',
             options: {

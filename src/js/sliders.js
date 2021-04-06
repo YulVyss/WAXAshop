@@ -31,9 +31,11 @@ import Swiper from 'swiper';
 		breakpoints: {						
 					320: {
 						navigation: false,
+						pagination: false,
 					},
 					768: {
 						navigation: false,
+						pagination: false,
 					},
 					992: {
 						slidesPerView: 1,
