@@ -34,6 +34,7 @@
     justify-content: space-between;
     padding: 40px;
     margin-bottom: 24px;
+    @include anim(0.3s, 0s);
     @media (min-width: $md3 + px) {
       &:hover {
         -webkit-filter: brightness(160%);
