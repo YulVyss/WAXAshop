@@ -1,24 +1,21 @@
 //footer
-.footer.container{
+.footer.container {
   background-color: transparent;
   padding: 0;
 }
 .footer {
-  // .footer__body
-  &__body {
-  }
   // .footer__top
   &__top {
     padding: 35px 26px 27px;
-    border-bottom: 1px solid #E9E9E9;
+    border-bottom: 1px solid #e9e9e9;
   }
   // .footer__social
   &__social {
     display: flex;
     justify-content: center;
-    li{
+    li {
       margin-right: 10px;
-      &:last-of-type{
+      &:last-of-type {
         margin-right: 0;
       }
     }
@@ -34,13 +31,10 @@
     justify-content: space-between;
     padding: 30px 150px;
   }
-  &__wrapper{
+  &__wrapper {
     flex: 0 0 44%;
     display: flex;
     justify-content: space-between;
-  }
-  // .footer__menu
-  &__menu {    
   }
   // .footer__title
   &__title {
@@ -51,144 +45,143 @@
   }
   // .footer__list
   &__list {
-    li{
+    li {
       margin-bottom: 25px;
     }
-    p, address{
+    p,
+    address {
       font-size: 13px;
       line-height: 16px;
       font-family: $fontFamilyAdd;
       font-style: normal;
-      color: #7A7A7A;
+      color: #7a7a7a;
     }
-    .nav__item{
+    .nav__item {
       font-family: $fontFamilyAdd;
       font-size: 13px;
       line-height: 26px;
     }
   }
-  &__additional{
+  &__additional {
     display: flex;
     justify-content: space-between;
     padding: 30px 150px;
   }
   // .footer__bottom
   &__bottom {
-    border-top: 1px solid #E9E9E9;
+    border-top: 1px solid #e9e9e9;
     padding: 30px 150px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    color: #7A7A7A;
+    align-items: flex-start;
+    color: #7a7a7a;
     font-size: 13px;
     line-height: 22px;
   }
-  &__site{
+  &__site {
     display: flex;
     flex-wrap: wrap;
-    a{
+    a {
       display: inline-block;
       font-size: 13px;
       line-height: 16px;
       font-family: $fontFamilyAdd;
-      color: #7A7A7A;
+      color: #7a7a7a;
       margin-right: 20px;
     }
-  }
-  // .footer__logo
-  &__logo {
-    
   }
   // .footer__about
   &__about {
     max-width: 50%;
     font-size: 16px;
-      line-height: 22px;
+    line-height: 22px;
   }
   // .footer__developer
   &__developer {
     opacity: 50%;
   }
-  &__payment{
-    img{
+  &__payment {
+    img {
       width: 100%;
     }
   }
-  @media (max-width: $md1 + px){
-    &__bottom, &__middle, &__additional {
+  @media (max-width: $md1 + px) {
+    &__bottom,
+    &__middle,
+    &__additional {
       padding: 30px 100px;
     }
   }
-  @media (max-width: $md2 + px){
-    &__bottom, &__middle, &__additional {
+  @media (max-width: $md2 + px) {
+    &__bottom,
+    &__middle,
+    &__additional {
       padding: 25px 26px 15px;
     }
-    &__middle{      
-    flex-wrap: wrap;
+    &__middle {
+      flex-wrap: wrap;
     }
-    &__wrapper{
+    &__wrapper {
       flex: 1 1 100%;
       justify-content: space-evenly;
     }
-    &__menu{
+    &__menu {
       flex: 1 0 50%;
     }
-    &__about{
+    &__about {
       font-size: 11px;
       line-height: 16px;
     }
   }
-  @media (max-width: $md3 + px){
-    &__middle{
+  @media (max-width: $md3 + px) {
+    &__middle {
       flex-wrap: wrap;
     }
     &__top {
       padding: 35px 26px 15px;
-      border-bottom: 1px solid #E9E9E9;
+      border-bottom: 1px solid #e9e9e9;
     }
     &__social {
-      justify-content: flex-start;      
-      li a {        
+      justify-content: flex-start;
+      li a {
         width: 21px;
         height: 21px;
       }
     }
-    &__list{
-      li{
+    &__list {
+      li {
         margin-bottom: 15px;
       }
     }
-    &__title{
+    &__title {
       margin-bottom: 20px;
     }
-    &__developer{
+    &__developer {
       opacity: 1;
     }
-    &__bottom{
+    &__bottom {
       flex-direction: column;
       align-items: center;
       opacity: 50%;
-      &>*{
+      & > * {
         margin-bottom: 20px;
       }
     }
-    &__about{
+    &__about {
       max-width: 100%;
       text-align: center;
     }
-    &__payment{
+    &__payment {
       min-width: 87px;
     }
   }
-  
 }
 .inst {
-  background: url('../img/icons/instagram.svg') center / contain no-repeat;
+  background: url("../img/icons/instagram.svg") center / contain no-repeat;
 }
 .vk {
-  background: url('../img/icons/vk.svg') center / contain no-repeat;
+  background: url("../img/icons/vk.svg") center / contain no-repeat;
 }
 .f {
-  background: url('../img/icons/f.svg') center / contain no-repeat;
+  background: url("../img/icons/f.svg") center / contain no-repeat;
 }
-

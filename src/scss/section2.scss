@@ -1,16 +1,16 @@
 // section 2 about Saphir
-.saphir1{  
+.saphir1 {
   // .saphir__body
   &__body {
     padding: 6% 25%;
-    background: url('../img/saphir_bg1.svg') no-repeat;
+    background: url("../img/saphir_bg1.svg") no-repeat;
   }
-  @media screen and (max-width: 1080px){
+  @media screen and (max-width: 1080px) {
     &__body {
       padding: 10% 15%;
     }
   }
-  @media screen and (max-width: $md2 + px){
+  @media screen and (max-width: $md2 + px) {
     &__body {
       padding: 7% 10%;
     }
@@ -18,14 +18,12 @@
 }
 .saphir {
   padding-bottom: 30px;
-  
-  
   // .saphir__title
   &__title {
     padding-top: 90px;
     position: relative;
-    &::before{
-      content: url('../img/icons/W.svg');
+    &::before {
+      content: url("../img/icons/W.svg");
       width: 84px;
       height: 84px;
       position: absolute;
@@ -42,7 +40,7 @@
     letter-spacing: 0.02em;
     text-align: center;
     margin: 0 0 30px;
-    span{
+    span {
       font-family: $fontFamilyAdd;
       font-size: 16px;
       font-weight: 400;
@@ -59,21 +57,20 @@
     background: transparent;
     margin: 0 auto 20px;
   }
-  
-  @media screen and (max-width: $md4 + px){
+  @media screen and (max-width: $md4 + px) {
     &__title {
       padding-top: 70px;
-      &::before{
+      &::before {
         width: 64px;
-        height: 64px;      
+        height: 64px;
         left: calc(50% - 32px);
       }
     }
-    &__description{
+    &__description {
       margin: 0 0 20px;
-      span{
+      span {
         display: none;
-        .open{
+        .open {
           display: block;
         }
       }
@@ -82,5 +79,4 @@
       display: block;
     }
   }
-  
 }

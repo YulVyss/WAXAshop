@@ -4,9 +4,8 @@
   padding-bottom: 25px;
   // .email__body
   &__body {
-    background: url('../img/subscribe.png') 10% 0 / contain no-repeat, #F2EADB;
+    background: url("../img/subscribe.png") 10% 0 / contain no-repeat, #f2eadb;
   }
-  
   // .email__from
   &__text {
     display: flex;
@@ -37,74 +36,73 @@
     line-height: 26px;
     margin-bottom: 30px;
   }
-  &__form {    
+  &__form {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
   }
-  input[type='email']{    
+  input[type="email"] {
     font-family: $fontFamilyAdd;
     flex: 1 1 auto;
     max-width: 366px;
-    margin-right: 24px;    
+    margin-right: 24px;
     line-height: 18px;
-    color: #7A7A7A;
+    color: #7a7a7a;
     opacity: 50%;
-    border-bottom: 1px solid #7A7A7A;
+    border-bottom: 1px solid #7a7a7a;
     background-color: transparent;
   }
-  input[type='submit']{
+  input[type="submit"] {
     width: 162px;
     padding: 10px 23px 10px 0;
-    border: 1px solid #7A7A7A;
+    border: 1px solid #7a7a7a;
     text-align: right;
     line-height: 28px;
     font-weight: bold;
-    background: url('../img/icons/arrow-light.svg') 15% 50% no-repeat, transparent;
+    background: url("../img/icons/arrow-light.svg") 15% 50% no-repeat, transparent;
   }
-  @media (max-width: $md2+px){    
+  @media (max-width: $md2+px) {
     &__body {
-      background: url('../img/subscribe.png') -30px 0 / contain no-repeat, #F2EADB;
+      background: url("../img/subscribe.png") -30px 0 / contain no-repeat, #f2eadb;
     }
-    &__text {      
+    &__text {
       padding: 6% 6% 6% 44%;
     }
   }
-  @media (max-width: $md3+px){    
+  @media (max-width: $md3+px) {
     &__body {
-      background: url('../img/subscribe.png') top / 48% no-repeat, #F2EADB;
+      background: url("../img/subscribe.png") top / 48% no-repeat, #f2eadb;
     }
-    &__text {      
+    &__text {
       padding: 57% 5% 5% 5%;
       text-align: center;
     }
-    &__subtitle {      
+    &__subtitle {
       margin-bottom: 20px;
-    }    
+    }
     &__title {
       font-size: 28px;
       line-height: 32px;
       margin-bottom: 15px;
-    }    
+    }
     &__description {
       font-size: 14px;
       line-height: 22px;
       margin-bottom: 20px;
     }
-    &__form {    
+    &__form {
       flex-direction: column;
     }
-    input[type='email']{          
+    input[type="email"] {
       max-width: 100%;
-      margin-right: 0;   
-      margin-bottom: 20px; 
+      margin-right: 0;
+      margin-bottom: 20px;
       text-align: center;
       padding-bottom: 10px;
     }
-    input[type='submit']{
+    input[type="submit"] {
       margin: 0 auto;
       cursor: pointer;
     }
   }
 }
-

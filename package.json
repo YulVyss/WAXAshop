@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack",
     "server": "webpack serve --open",
-    "build": "NODE_ENV=production webpack",
+    "build": "webpack --mode production",
     "watch": "webpack --watch"
   },
   "devDependencies": {

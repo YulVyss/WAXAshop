@@ -16,7 +16,6 @@ if (iconMenuM != null) {
 let iconMenuB = document.querySelector(".header-bottom__button");
 let menuBodyB = document.querySelector(".header-bottom__list");
 
-
 if (iconMenuB != null) {
 	iconMenuB.addEventListener("click", function (e) {
 		if (unlock) {

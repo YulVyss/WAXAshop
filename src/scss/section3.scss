@@ -1,28 +1,27 @@
 // section Collection
 .collection {
-  
   // .collection__title
   &__title {
     position: relative;
-    &::before{
-			content: url('../img/icons/К.svg');
+    &::before {
+      content: url("../img/icons/К.svg");
       position: absolute;
       top: 0;
       left: calc(50% - 10px);
-		}
+    }
   }
-  &__wrapper{
+  &__wrapper {
     display: flex;
   }
   // .collection__body
-  &__body {    
+  &__body {
     padding: 100px 25px 86px;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
   }
   // .collection__column
   &__column {
     flex: 1 0 50%;
-    &:first-child{
+    &:first-child {
       margin-right: 24px;
     }
   }
@@ -35,12 +34,12 @@
     justify-content: space-between;
     padding: 40px;
     margin-bottom: 24px;
-    @media (min-width: $md3 + px){
-      &:hover{
-      filter: brightness(160%);
+    @media (min-width: $md3 + px) {
+      &:hover {
+        -webkit-filter: brightness(160%);
+        filter: brightness(160%);
+      }
     }
-    }
-    
     // .collection__item_l
     &_l {
       min-height: 648px;
@@ -68,7 +67,7 @@
     right: 40px;
     border: 1px solid rgba($color: #fff, $alpha: 0.3);
     border-radius: 50%;
-    background: url('../img/icons/arrow-collection.svg') center no-repeat;
+    background: url("../img/icons/arrow-collection.svg") center no-repeat;
   }
   // .collection__description
   &__description {
@@ -78,21 +77,23 @@
     display: flex;
     justify-content: space-between;
   }
-  @media (max-width: $md3 + px){
-    &__body{
+  @media (max-width: $md3 + px) {
+    &__body {
       background-color: transparent;
       padding: 50px 0 0;
     }
-    &__wrapper{
+    &__wrapper {
       flex-direction: column;
     }
     &__column {
       width: 100%;
-      &:first-child{
+      &:first-child {
         margin-right: 0;
       }
     }
-    &__item, &__item_s, &__item_l{
+    &__item,
+    &__item_s,
+    &__item_l {
       width: 100%;
       max-height: 325px;
       min-height: 325px;
@@ -106,28 +107,25 @@
       top: 24px;
       right: 24px;
       border: 1px solid rgba($color: #fff, $alpha: 1);
-      background: url('../img/icons/arrow-collection-black.svg') center no-repeat, #fff;
+      background: url("../img/icons/arrow-collection-black.svg") center no-repeat, #fff;
     }
   }
-    
-  
 }
-.collection__item_1{
-  background: url('../img/collection1.jpg') top / cover no-repeat;
+.collection__item_1 {
+  background: url("../img/collection1.jpg") top / cover no-repeat;
 }
-.collection__item_2{
-  background: url('../img/collection2.jpg') top / cover no-repeat;
+.collection__item_2 {
+  background: url("../img/collection2.jpg") top / cover no-repeat;
 }
-.collection__item_3{
-  background: url('../img/collection3.jpg') top / cover no-repeat;
+.collection__item_3 {
+  background: url("../img/collection3.jpg") top / cover no-repeat;
 }
-.collection__item_4{
-  background: url('../img/collection4.jpg') top / cover no-repeat;
+.collection__item_4 {
+  background: url("../img/collection4.jpg") top / cover no-repeat;
 }
-.collection__item_5{
-  background: url('../img/collection5.jpg') top / cover no-repeat;
+.collection__item_5 {
+  background: url("../img/collection5.jpg") top / cover no-repeat;
 }
-.collection__item_6{
-  background: url('../img/collection6.jpg') top / cover no-repeat;
+.collection__item_6 {
+  background: url("../img/collection6.jpg") top / cover no-repeat;
 }
-
